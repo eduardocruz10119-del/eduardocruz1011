@@ -267,9 +267,10 @@
   footer { background: var(--navy2); color: rgba(255,255,255,0.5); text-align: center; padding: 3rem 6vw; font-size: 0.84rem; line-height: 2; }
   footer strong { color: var(--white); }
   footer a { color: var(--cyan); text-decoration: none; }
-  .footer-social { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 0.75rem; }
-  .footer-social a { color: rgba(255,255,255,0.55); font-size: 0.82rem; text-decoration: none; border: 1px solid rgba(255,255,255,0.15); padding: 0.4rem 0.9rem; border-radius: 20px; transition: color .2s, border-color .2s, background .2s; }
-  .footer-social a:hover { color: var(--white); border-color: rgba(79,209,224,0.5); background: rgba(79,209,224,0.08); }
+  .footer-social { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 0.85rem; flex-wrap: wrap; }
+  .footer-social a { display: inline-flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.7); font-size: 0.82rem; font-weight: 500; text-decoration: none; border: 1px solid rgba(255,255,255,0.15); padding: 0.45rem 0.95rem; border-radius: 30px; transition: color .2s, border-color .2s, background .2s, transform .2s; }
+  .footer-social a:hover { color: var(--white); border-color: rgba(79,209,224,0.5); background: rgba(79,209,224,0.08); transform: translateY(-2px); }
+  .footer-social svg { width: 20px; height: 20px; display: block; flex-shrink: 0; }
 
   /* ── WA FLOAT ── */
   .wa-float { position: fixed; bottom: 24px; right: 24px; z-index: 200; width: 60px; height: 60px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; text-decoration: none; box-shadow: 0 6px 24px rgba(37,211,102,0.5); transition: transform .2s, box-shadow .2s; }
@@ -538,8 +539,18 @@
   <p>Alfredo Valadez #1102, Sta. María del Granjeno · León de los Aldama, Gto. · C.P. 37520</p>
   <p><a href="tel:4777861705">477 786 1705</a> · <a href="mailto:dxclinicovet@hotmail.com">dxclinicovet@hotmail.com</a></p>
   <div class="footer-social">
-    <a href="https://www.facebook.com/p/DXVet-Diagn%C3%B3stico-Cl%C3%ADnico-Veterinario-100057206479381/" target="_blank">📘 Facebook</a>
-    <a href="https://www.instagram.com/dxvet_veterinaria" target="_blank">📸 Instagram @dxvet_veterinaria</a>
+    <a href="https://www.facebook.com/p/DXVet-Diagn%C3%B3stico-Cl%C3%ADnico-Veterinario-100057206479381/" target="_blank" aria-label="Facebook DXVet">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#1877F2" d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.469h-2.796v8.385C19.612 22.954 24 17.99 24 12z"/></svg>
+      <span>Facebook</span>
+    </a>
+    <a href="https://www.instagram.com/dxvet_veterinaria" target="_blank" aria-label="Instagram DXVet">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <defs><radialGradient id="igGrad" cx="0.3" cy="1" r="1.1"><stop offset="0%" stop-color="#FED576"/><stop offset="26%" stop-color="#F47133"/><stop offset="61%" stop-color="#BC3081"/><stop offset="100%" stop-color="#4C63D2"/></radialGradient></defs>
+        <rect x="1" y="1" width="22" height="22" rx="6" fill="url(#igGrad)"/>
+        <path fill="#fff" d="M12 7.2A4.8 4.8 0 1 0 16.8 12 4.81 4.81 0 0 0 12 7.2zm0 7.92A3.12 3.12 0 1 1 15.12 12 3.12 3.12 0 0 1 12 15.12zM17 5.85a1.12 1.12 0 1 0 1.12 1.12A1.12 1.12 0 0 0 17 5.85z"/>
+      </svg>
+      <span>Instagram</span>
+    </a>
   </div>
   <p style="margin-top:1rem;font-size:0.74rem;">© 2025 DXVet · Todos los derechos reservados · León, Guanajuato</p>
 </footer>
